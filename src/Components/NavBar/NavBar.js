@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Nav,Form } from 'react-bootstrap'
 import {
     ImWhatsapp,
@@ -10,6 +10,16 @@ import {
 } from 'react-icons/all'
 
 export const NavBar = () => {
+    const [theme, setTheme] = useState("light");
+
+    const handleTheme=(e)=>{
+        if(theme==="light"){
+            setTheme("dark");
+        }else{
+            setTheme("light");
+        }
+    }
+
     return (
         <>
             <Nav variant="tabs" className="justify-content-center" activeKey="/home">
@@ -20,8 +30,11 @@ export const NavBar = () => {
                     </Form.Select>
                 </Nav.Item>
                 <Nav.Item>
-                    <Nav.Link href="/home">
-                        <FaMoon size={30} color="black" />
+                    <Nav.Link onClick={handleTheme}>
+                        {theme==="light"
+                            ?<FaMoon size={30} color="black" />
+                            :<FiSun size={30} color="yellow" />
+                        }
                     </Nav.Link>
                 </Nav.Item>
             </Nav>
