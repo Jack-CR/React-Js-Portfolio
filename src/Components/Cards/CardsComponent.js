@@ -1,5 +1,6 @@
 import React from 'react'
 import { Card, ListGroupItem, ListGroup } from 'react-bootstrap'
+import OffCanvaComponent from '../OffCanva/OffCanvaComponent'
 
 export const CardsComponent = ({ project, lang }) => {
     return (
@@ -22,7 +23,7 @@ export const CardsComponent = ({ project, lang }) => {
                
             </ListGroup>
             <Card.Body>
-                <Card.Link href="#">{project[lang].projectBtnImages}</Card.Link>
+                <OffCanvaComponent/>
             </Card.Body>
         </Card>
     )

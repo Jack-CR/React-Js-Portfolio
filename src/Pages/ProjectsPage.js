@@ -5,7 +5,7 @@ import Footer from '../Components/Footer/Footer'
 
 /* LIST OF MY PROJECTS */
 const MyProjects = [
-    {
+    {/* PROJECT 1 */
         en: {
             projectTitle: "3 Month Supervised Practice at Betico Mata & Parrilla Restaurant",
             projectInfo:" Develop a web application with a duration of 3 months to conclude with the supervised practice.",
@@ -22,6 +22,24 @@ const MyProjects = [
         ],
         imgStart:"img/project_1/1.png"
     },
+    /* Project 2 */
+    {
+        en: {
+            projectTitle: "3 Month Supervised Practice at Betico Mata & Parrilla Restaurant",
+            projectInfo:" Develop a web application with a duration of 3 months to conclude with the supervised practice.",
+            projectBtnImages: "Show Images"
+        },
+        es: {
+            projectTitle: "3 Meses de Practica Supervisada en el Restaurante Betico Mata & Parrilla",
+            projectInfo:" Desarrollar una Aplicación Web con una duración de 3 meses para concluir con la practica supervisada.",
+            projectBtnImages: "Mostrar Imagenes"
+        },
+        tecnologies: [
+          "jaja",
+          "phphp"
+        ],
+        imgStart:"img/project_1/1.png"
+    }
 ]
 
 export const ProjectsPage = ({ lang }) => {
