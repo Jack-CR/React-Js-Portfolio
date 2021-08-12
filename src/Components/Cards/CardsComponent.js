@@ -3,12 +3,12 @@ import { Card, ListGroupItem, ListGroup } from 'react-bootstrap'
 
 export const CardsComponent = ({ project, lang }) => {
     return (
-        <Card style={{ width: '18rem' }}>
-            <Card.Img variant="top" src="holder.js/100px180?text=Image cap" />
+        <Card style={{ width: '30rem' }}>
+            <Card.Img variant="top" src={project.imgStart} />
             <Card.Body>
                 <Card.Title>{project[lang].projectTitle}</Card.Title>
                 <Card.Text>
-
+                    {project[lang].projectInfo}
                 </Card.Text>
             </Card.Body>
             <ListGroup className="list-group-flush">
