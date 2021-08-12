@@ -29,14 +29,18 @@ const language = {
         navMenu_2: "Projects",
         navMenu_3: "Resume",
         modalAbout: "!Meet Me¡",
-        modalHeader: "¡Hi I'm junior web Developer!"
+        modalHeader: "¡Hi I'm junior web Developer!",
+        modalAboutMe:"About Me",
+        modalmeDescription:"I am a person who is passionate about technology, who likes challenges and does not give up easily. Very self-taught, I never stop learning."
     },
     es: {
         navMenu_1: "Habilidades",
         navMenu_2: "Proyectos",
         navMenu_3: "Currículum",
         modalAbout: "!Conoceme¡",
-        modalHeader: "¡Hola Soy Desarrollador Web Junior!"
+        modalHeader: "¡Hola Soy Desarrollador Web Junior!",
+        modalAboutMe:"Sobre mi",
+        modalmeDescription:"Soy una persona que le apasiona la tecnologia, que le gusta los retos y no se rinde fácilmente. Muy autodidacta , nunca dejo de aprender."
     }
 }
 
@@ -62,7 +66,7 @@ export const NavBar = () => {
 
     return (
         <Router>
-            <div class={theme}>
+            <div className={theme}>
                 <Nav  className="justify-content-center" activeKey="/home">
                     <Nav.Item>
                         <Form.Select aria-label="Default select example" onChange={handleLanguage}>
@@ -93,7 +97,7 @@ export const NavBar = () => {
                         </Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                        <Nav.Link href="#" eventKey="link-2"><AiFillLinkedin size={30} color="blue" /></Nav.Link>
+                        <Nav.Link href="https://api.whatsapp.com/send?phone=50689498924" eventKey="link-2"><AiFillLinkedin size={30} color="blue" /></Nav.Link>
                     </Nav.Item>
                 </Nav>
                 <p className="text-center mt-4 mb-4">
