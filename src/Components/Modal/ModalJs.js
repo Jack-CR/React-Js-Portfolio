@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { MdLaptopChromebook } from 'react-icons/all'
 import { Modal, Button, Container, Row, Col } from 'react-bootstrap'
+import {SiDotNet,DiDjango} from 'react-icons/all'
 
 export const ModalJs = ({ lang, language }) => {
 
@@ -27,9 +28,16 @@ export const ModalJs = ({ lang, language }) => {
               </Col>
               <Col>
                 <h2>{language[lang].modalAboutMe}</h2>
-                <p>
+                <p className="mt-5">
                   {language[lang].modalmeDescription}
                 </p>
+              </Col>
+            </Row>
+            <Row className="mt-4">
+              <Col>
+                { <h3>{language[lang].modalTecIwhant}</h3>}
+                <SiDotNet size={75} color="purple"/>
+                <DiDjango size={75} color="#092E20 " style={{marginLeft:"30px"}}/>
               </Col>
             </Row>
           </Container>

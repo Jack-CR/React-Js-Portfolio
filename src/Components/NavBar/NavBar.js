@@ -8,7 +8,7 @@ import {
     FaMoon,
     FiCpu,
     MdBusinessCenter,
-    FaFilePdf
+    AiOutlineFilePdf
 
 } from 'react-icons/all'
 import {
@@ -31,7 +31,8 @@ const language = {
         modalAbout: "!Meet Me¡",
         modalHeader: "¡Hi I'm junior web Developer!",
         modalAboutMe:"About Me",
-        modalmeDescription:"I am a person who is passionate about technology, who likes challenges and does not give up easily. Very self-taught, I never stop learning."
+        modalmeDescription:"I am a person who is passionate about technology, who likes challenges and does not give up easily. Very self-taught, I never stop learning.",
+        modalTecIwhant:"Technologies that I would like to learn"
     },
     es: {
         navMenu_1: "Habilidades",
@@ -40,7 +41,8 @@ const language = {
         modalAbout: "!Conoceme¡",
         modalHeader: "¡Hola Soy Desarrollador Web Junior!",
         modalAboutMe:"Sobre mi",
-        modalmeDescription:"Soy una persona que le apasiona la tecnologia, que le gusta los retos y no se rinde fácilmente. Muy autodidacta , nunca dejo de aprender."
+        modalmeDescription:"Soy una persona que le apasiona la tecnologia, que le gusta los retos y no se rinde fácilmente. Muy autodidacta , nunca dejo de aprender.",
+        modalTecIwhant:"Tecnologías que me gustaría aprender"
     }
 }
 
@@ -105,13 +107,13 @@ export const NavBar = () => {
                 </p>
                 <Nav variant="tabs" className="justify-content-start" defaultActiveKey="/home">
                     <Nav.Item>
-                        <Nav.Link href="/home"><FiCpu size={30} color="gray" /><Link to="/"> {language[lang].navMenu_1}</Link></Nav.Link>
+                        <Nav.Link><FiCpu size={30} color="gray" /><Link to="/"> {language[lang].navMenu_1}</Link></Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                        <Nav.Link eventKey="link-1"><MdBusinessCenter color="black" size={30} /><Link to="/Projects">{language[lang].navMenu_2}</Link></Nav.Link>
+                        <Nav.Link eventKey="link-1"><MdBusinessCenter color="brown" size={30} /><Link to="/Projects">{language[lang].navMenu_2}</Link></Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                        <Nav.Link eventKey="link-2"><FaFilePdf size={30} color="red" /><Link to="/Resume">{language[lang].navMenu_3}</Link></Nav.Link>
+                        <Nav.Link eventKey="link-2"><AiOutlineFilePdf size={30} color="red" /><Link to="/Resume">{language[lang].navMenu_3}</Link></Nav.Link>
                     </Nav.Item>
                 </Nav>
 
