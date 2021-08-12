@@ -131,7 +131,7 @@ export const NavBar = () => {
                         <ResumePage />
                     </Route>
                     <Route path="/Projects">
-                        <ProjectsPage />
+                        <ProjectsPage lang={lang}/>
                     </Route>
                     <Route path="/">
                         <SkillsPage />

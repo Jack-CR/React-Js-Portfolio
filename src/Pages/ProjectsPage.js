@@ -1,37 +1,40 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import CardsComponent from '../Components/Cards/CardsComponent'
+import Footer from '../Components/Footer/Footer'
 
 const MyProjects = [
     {
-        name: "Shopping Cart",
-        tecnologies: {
-            tec_1: "Laravel",
-            tec_2: "Mysql"
-        }
+        en:{
+            projectTitle:"3 Month Supervised Practice at Betico Mata & Parrilla Restaurant",
+            projectBtnImages:"Show Images"
+        },
+        es:{
+            projectTitle:"3 Meses de Practica Supervisada en el Restaurante Betico Mata & Parrilla",
+            projectBtnImages:"Mostrar Imagenes"
+        },
+        tecnologies:[
+            "laravel",
+            "php"
+        ]
     },
-    {
-        name: "venta",
-        tecnologies: {
-            tec_1: "Mysql",
-            tec_2: "java"
-        }
-    }
 ]
 
-export const ProjectsPage = () => {
+export const ProjectsPage = ({lang,language}) => {
+
     return (
-        <Container>
+        <Container className="mt-5">
             <Row>
                 {MyProjects.map((el, key) => {
                     return (
-                        <Col>
-                            <CardsComponent project={el} key={key} />
+                        <Col key={key}>
+                            <CardsComponent project={el} lang={lang}/>
                         </Col>
                     )
                 })}
             </Row>
         </Container>
+        
     )
 }
 
