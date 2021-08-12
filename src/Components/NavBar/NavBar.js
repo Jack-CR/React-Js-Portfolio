@@ -30,7 +30,7 @@ const language = {
         navMenu_2: "Projects",
         navMenu_3: "Resume",
         modalAbout: "!Meet Me¡",
-        modalHeader: "¡Hi I'm junior web Developer!",
+        modalHeader: "¡Hi I'm Yacdany and I'm a web Developer!",
         modalAboutMe:"About Me",
         modalmeDescription:"I am a person who is passionate about technology, who likes challenges and does not give up easily. Very self-taught, I never stop learning.",
         modalTecIwhant:"Technologies that I would like to learn"
@@ -40,7 +40,7 @@ const language = {
         navMenu_2: "Proyectos",
         navMenu_3: "Currículum",
         modalAbout: "!Conoceme¡",
-        modalHeader: "¡Hola Soy Desarrollador Web Junior!",
+        modalHeader: "¡Hola Soy Yacdany y soy Desarrollador Web!",
         modalAboutMe:"Sobre mi",
         modalmeDescription:"Soy una persona que le apasiona la tecnologia, que le gusta los retos y no se rinde fácilmente. Muy autodidacta , nunca dejo de aprender.",
         modalTecIwhant:"Tecnologías que me gustaría aprender"
@@ -100,7 +100,7 @@ export const NavBar = () => {
                         </Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                        <Nav.Link href="https://api.whatsapp.com/send?phone=50689498924" eventKey="link-2"><AiFillLinkedin size={30} color="blue" /></Nav.Link>
+                        <Nav.Link href="https://www.linkedin.com/in/yacdany-arguedas-mora-22592b211?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BSO7dUR3OTk%2B%2BGuxtHweVOQ%3D%3D" target="_blank" eventKey="link-2"><AiFillLinkedin size={30} color="blue" /></Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
                         <Nav.Link href="mailto:jack20-21@hotmail.com">

@@ -82,32 +82,32 @@ const MyProjects = [
     /* PROJECT 3 */
     {
         en: {
-            projectTitle: "Market",
-            projectInfo: "Develop a market web  application where each user can register, publish their products, see other users' products, comment on publications, etc.",
+            projectTitle: "CRUD MERN",
+            projectInfo: "Be able to perform the 4 basic Http operations (GET,POST,PUT,DELETE).",
             projectBtnInfo: "More Information",
             canvaBuiltwith:"Built with:"
         },
         es: {
-            projectTitle: "Mercado Libre",
-            projectInfo: "Desarrollar Aplicacíon tipo mercado libre donde cada usuario pueda registrarse publicar sus productos , ver productos de otros usuarios , comentar publicaciones etc",
+            projectTitle: "CRUD MERN",
+            projectInfo: "Poder realizar las 4 operaciones basicas Http (GET,POST,PUT,DELETE).",
             projectBtnInfo: "Más Información",
             canvaBuiltwith:"Construido con:"
         },
-        imgStart: "img/project_2/1.png",
+        imgStart: "img/project_3/1.png",
         tecnologies:
         [
             <AiOutlineHtml5 size={60}/>,
             <DiCss3 size={60}/>,
-            <SiMysql size={60}/>,
-            <IoLogoJavascript size={60}/>,
-            <FaLaravel size={60}/>
+            <FaReact size={60}/>,
+            <GrNode size={60}/>,
+            <DiMongodb size={60}/>
         ],
         imgProject:
         [
-            "img/project_2/1.png",
-            "img/project_2/2.png",
-            "img/project_2/3.png",
-            "img/project_2/4.png"
+            "img/project_3/1.png",
+            "img/project_3/2.png",
+            "img/project_3/3.png",
+            "img/project_3/4.png"
         ]
     },
 ]
