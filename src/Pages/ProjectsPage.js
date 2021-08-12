@@ -11,8 +11,6 @@ import {
     IoLogoJavascript,
     DiMongodb,
     SiMysql,
-    FaGitAlt,
-    DiBootstrap,
     FaPhp
     } from 'react-icons/all'
 
