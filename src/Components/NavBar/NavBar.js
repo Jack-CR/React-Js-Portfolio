@@ -114,9 +114,9 @@ export const NavBar = () => {
                 <p className="text-center mt-4 mb-4">
                     <ModalJs lang={lang} language={language} />
                 </p>
-                <Nav variant="tabs" className="justify-content-start" defaultActiveKey="/home">
+                <Nav variant="tabs" className="justify-content-start" defaultActiveKey="/">
                     <Nav.Item>
-                        <Nav.Link><FiCpu size={30} color="gray" /><Link to="/"> {language[lang].navMenu_1}</Link></Nav.Link>
+                        <Nav.Link eventKey="/" ><FiCpu size={30} color="gray" /><Link to="/"> {language[lang].navMenu_1}</Link></Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
                         <Nav.Link eventKey="link-1"><MdBusinessCenter color="brown" size={30} /><Link to="/Projects">{language[lang].navMenu_2}</Link></Nav.Link>
