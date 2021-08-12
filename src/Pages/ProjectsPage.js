@@ -78,7 +78,38 @@ const MyProjects = [
             "img/project_2/3.png",
             "img/project_2/4.png"
         ]
-    }
+    },
+    /* PROJECT 3 */
+    {
+        en: {
+            projectTitle: "Market",
+            projectInfo: "Develop a market web  application where each user can register, publish their products, see other users' products, comment on publications, etc.",
+            projectBtnInfo: "More Information",
+            canvaBuiltwith:"Built with:"
+        },
+        es: {
+            projectTitle: "Mercado Libre",
+            projectInfo: "Desarrollar Aplicacíon tipo mercado libre donde cada usuario pueda registrarse publicar sus productos , ver productos de otros usuarios , comentar publicaciones etc",
+            projectBtnInfo: "Más Información",
+            canvaBuiltwith:"Construido con:"
+        },
+        imgStart: "img/project_2/1.png",
+        tecnologies:
+        [
+            <AiOutlineHtml5 size={60}/>,
+            <DiCss3 size={60}/>,
+            <SiMysql size={60}/>,
+            <IoLogoJavascript size={60}/>,
+            <FaLaravel size={60}/>
+        ],
+        imgProject:
+        [
+            "img/project_2/1.png",
+            "img/project_2/2.png",
+            "img/project_2/3.png",
+            "img/project_2/4.png"
+        ]
+    },
 ]
 
 export const ProjectsPage = ({ lang }) => {
@@ -94,8 +125,9 @@ export const ProjectsPage = ({ lang }) => {
                     )
                 })}
             </Row>
+            <Footer/>
         </Container>
-
+       
     )
 }
 

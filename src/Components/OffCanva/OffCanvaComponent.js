@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Button, Offcanvas } from 'react-bootstrap'
 import { Image } from 'react-bootstrap'
-import { BiPhotoAlbum } from 'react-icons/all'
+import { FaImages } from 'react-icons/all'
 import {Container,Row,Col } from 'react-bootstrap'
 
 
@@ -14,7 +14,7 @@ export const OffCanvaComponent = ({ project, lang }) => {
     return (
         <>
             <Button variant="secondary" onClick={handleShow}>
-                <BiPhotoAlbum size={20} color="lightblue" /> {project[lang].projectBtnInfo}
+                <FaImages size={20} color="white"/> {project[lang].projectBtnInfo}
             </Button>
 
             <Offcanvas show={show} onHide={handleClose}>
