@@ -17,6 +17,9 @@ import {
     Route,
     Link
 } from "react-router-dom";
+import ProjectsPage from '../../Pages/ProjectsPage';
+import ResumePage from '../../Pages/ResumePage';
+import SkillsPage from '../../Pages/SkillsPage';
 import ModalJs from '../Modal/ModalJs'
 
 /* ENGLISH AND SPANISH */
@@ -93,25 +96,25 @@ export const NavBar = () => {
             </p>
             <Nav variant="tabs" className="justify-content-start" activeKey="/">
                 <Nav.Item>
-                    <Nav.Link ><FiCpu size={30} color="gray" /><Link to="/"> {language[lang].navMenu_1}</Link></Nav.Link>
+                    <Nav.Link eventkey="/"><FiCpu size={30} color="gray" /><Link to="/"> {language[lang].navMenu_1}</Link></Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                    <Nav.Link eventKey="link-1"><MdBusinessCenter color="black" size={30} /><Link to="/Skills">{language[lang].navMenu_2}</Link></Nav.Link>
+                    <Nav.Link eventKey="link-1"><MdBusinessCenter color="black" size={30} /><Link to="/Projects">{language[lang].navMenu_2}</Link></Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                    <Nav.Link eventKey="link-2"><FaFilePdf size={30} color="red" /><Link to="Projects">{language[lang].navMenu_3}</Link></Nav.Link>
+                    <Nav.Link eventKey="link-2"><FaFilePdf size={30} color="red" /><Link to="/Resume">{language[lang].navMenu_3}</Link></Nav.Link>
                 </Nav.Item>
             </Nav>
 
             <Switch>
                 <Route path="/Resume">
-
+                    <ResumePage/>
                 </Route>
                 <Route path="/Projects">
-
+                    <ProjectsPage/>
                 </Route>
                 <Route path="/">
-                    
+                    <SkillsPage/>
                 </Route>
             </Switch>
         </Router>
