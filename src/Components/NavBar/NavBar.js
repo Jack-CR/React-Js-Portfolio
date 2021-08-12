@@ -7,7 +7,8 @@ import {
     FiSun,
     FaMoon,
     FiCpu,
-    MdBusinessCenter
+    MdBusinessCenter,
+    FaFilePdf
 
 } from 'react-icons/all'
 
@@ -85,7 +86,7 @@ export const NavBar = () => {
                     <Nav.Link eventKey="link-1"><MdBusinessCenter color="black" size={30}/>{language[lang].navMenu_2}</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                    <Nav.Link eventKey="link-2">{language[lang].navMenu_3}</Nav.Link>
+                    <Nav.Link eventKey="link-2"><FaFilePdf size={30} color="red"/>{language[lang].navMenu_3}</Nav.Link>
                 </Nav.Item>
             </Nav>
         </>
