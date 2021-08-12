@@ -11,6 +11,7 @@ import {
     FaFilePdf
 
 } from 'react-icons/all'
+import ModalJs from '../Modal/ModalJs'
 
 /* ENGLISH AND SPANISH */
 const language={
@@ -18,13 +19,15 @@ const language={
         navMenu_1:"Skills",
         navMenu_2:"Projects",
         navMenu_3:"Resume",
-        modalAbout:"!Know me¡"
+        modalAbout:"!Know me¡",
+        modalHeader:"¡Hi I'm junior web Developer!"
     },
     es:{
         navMenu_1:"Habilidades",
         navMenu_2:"Proyectos",
         navMenu_3:"Currículum",
-        modalAbout:"!Conoceme¡"
+        modalAbout:"!Conoceme¡",
+        modalHeader:"¡Hola Soy Desarrollador Web Junior!"
     }
 }
 
@@ -77,7 +80,9 @@ export const NavBar = () => {
                     <Nav.Link eventKey="link-2"><AiFillLinkedin size={30} color="blue" /></Nav.Link>
                 </Nav.Item>
             </Nav>
-            <p className="text-center mt-4 mb-4">{language[lang].modalAbout}</p>
+            <p className="text-center mt-4 mb-4">
+                <ModalJs lang={lang} language={language}/>
+            </p>
             <Nav variant="tabs" className="justify-content-start" activeKey="/">
                 <Nav.Item>
                     <Nav.Link href="/"><FiCpu size={30} color="gray"/> {language[lang].navMenu_1}</Nav.Link>
