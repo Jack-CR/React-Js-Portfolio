@@ -8,7 +8,8 @@ import {
     FaMoon,
     FiCpu,
     MdBusinessCenter,
-    AiOutlineFilePdf
+    AiOutlineFilePdf,
+    AiOutlineMail
 
 } from 'react-icons/all'
 import {
@@ -100,6 +101,14 @@ export const NavBar = () => {
                     </Nav.Item>
                     <Nav.Item>
                         <Nav.Link href="https://api.whatsapp.com/send?phone=50689498924" eventKey="link-2"><AiFillLinkedin size={30} color="blue" /></Nav.Link>
+                    </Nav.Item>
+                    <Nav.Item>
+                        <Nav.Link href="mailto:jack20-21@hotmail.com">
+                            {theme==="light"
+                                ?<AiOutlineMail size={30} color="black"/>
+                                :<AiOutlineMail size={30} color="white"/>
+                            }
+                        </Nav.Link>
                     </Nav.Item>
                 </Nav>
                 <p className="text-center mt-4 mb-4">

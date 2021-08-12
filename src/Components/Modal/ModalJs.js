@@ -16,7 +16,7 @@ export const ModalJs = ({ lang, language }) => {
 
       </Button>
 
-      <Modal show={show} onHide={handleClose}>
+      <Modal show={show} onHide={handleClose} >
         <Modal.Header closeButton>
           <Modal.Title>{language[lang].modalHeader}</Modal.Title>
         </Modal.Header>
