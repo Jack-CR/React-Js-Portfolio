@@ -13,6 +13,7 @@ import
     FaGitAlt,
     DiBootstrap
 } from 'react-icons/all'
+import Footer from '../Components/Footer/Footer'
 
 const IconsSkills=[
     <AiOutlineHtml5 size={200} color="#f06529"/>,
@@ -29,9 +30,14 @@ const IconsSkills=[
 export const SkillsPage = () => {
     return (
       <Container>
-        <Row>
+        <Row className="mt-3">
             <Col>
                 {IconsSkills}
+            </Col>
+        </Row>
+        <Row>
+            <Col>
+                <Footer/>
             </Col>
         </Row>
       </Container>
