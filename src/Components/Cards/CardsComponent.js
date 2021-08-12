@@ -1,10 +1,10 @@
 import React from 'react'
-import { Card, ListGroupItem, ListGroup } from 'react-bootstrap'
+import { Card } from 'react-bootstrap'
 import OffCanvaComponent from '../OffCanva/OffCanvaComponent'
 
 export const CardsComponent = ({ project, lang }) => {
     return (
-        <Card style={{ width: '30rem' }}>
+        <Card style={{ width: '20rem' }}>
             <Card.Img variant="top" src={project.imgStart} />
             <Card.Body>
                 <Card.Title>{project[lang].projectTitle}</Card.Title>
@@ -12,18 +12,8 @@ export const CardsComponent = ({ project, lang }) => {
                     {project[lang].projectInfo}
                 </Card.Text>
             </Card.Body>
-            <ListGroup className="list-group-flush">
-                {
-                    project.tecnologies.map((el,key)=>{
-                        return (
-                            <ListGroupItem key={key}>{el}</ListGroupItem>
-                        )
-                    })
-                }
-               
-            </ListGroup>
             <Card.Body>
-                <OffCanvaComponent/>
+                <OffCanvaComponent project={project} lang={lang}/>
             </Card.Body>
         </Card>
     )
