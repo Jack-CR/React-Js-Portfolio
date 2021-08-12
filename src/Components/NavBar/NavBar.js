@@ -5,14 +5,32 @@ import {
     AiFillGithub,
     AiFillLinkedin,
     FiSun,
-    FaMoon
+    FaMoon,
+    FiCpu,
+    MdBusinessCenter
 
 } from 'react-icons/all'
 
+/* ENGLISH AND SPANISH */
+const language={
+    en:{
+        navMenu_1:"Skills",
+        navMenu_2:"Projects",
+        navMenu_3:"Resume",
+        modalAbout:"!Know me¡"
+    },
+    es:{
+        navMenu_1:"Habilidades",
+        navMenu_2:"Proyectos",
+        navMenu_3:"Currículum",
+        modalAbout:"!Conoceme¡"
+    }
+}
+
 export const NavBar = () => {
     const [theme, setTheme] = useState("light");
-    const [language, setLanguage] = useState("en");
-
+    const [lang, setLang] = useState("en");
+   
     const handleTheme=(e)=>{
         if(theme==="light"){
             setTheme("dark");
@@ -22,11 +40,11 @@ export const NavBar = () => {
     }
 
     const handleLanguage=(e)=>{
-        if(language==="en"){
-            setLanguage("es");
-        }else{
-            setLanguage("en");
-        }
+      if(lang==="en"){
+          setLang("es");
+      }else{
+          setLang("en");
+      }
     }
 
     return (
@@ -58,16 +76,16 @@ export const NavBar = () => {
                     <Nav.Link eventKey="link-2"><AiFillLinkedin size={30} color="blue" /></Nav.Link>
                 </Nav.Item>
             </Nav>
-            <p className="text-center mt-4 mb-4">Button About me</p>
+            <p className="text-center mt-4 mb-4">{language[lang].modalAbout}</p>
             <Nav variant="tabs" className="justify-content-start" activeKey="/">
                 <Nav.Item>
-                    <Nav.Link href="/">Skills</Nav.Link>
+                    <Nav.Link href="/"><FiCpu size={30} color="gray"/> {language[lang].navMenu_1}</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                    <Nav.Link eventKey="link-1">Projects</Nav.Link>
+                    <Nav.Link eventKey="link-1"><MdBusinessCenter color="black" size={30}/>{language[lang].navMenu_2}</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                    <Nav.Link eventKey="link-2">Resume</Nav.Link>
+                    <Nav.Link eventKey="link-2">{language[lang].navMenu_3}</Nav.Link>
                 </Nav.Item>
             </Nav>
         </>
