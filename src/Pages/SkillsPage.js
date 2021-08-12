@@ -10,7 +10,8 @@ import
     IoLogoJavascript,
     DiMongodb,
     SiMysql,
-    FaGitAlt
+    FaGitAlt,
+    DiBootstrap
 } from 'react-icons/all'
 
 const IconsSkills=[
@@ -22,6 +23,7 @@ const IconsSkills=[
     <IoLogoJavascript size={200} color="#f0db4f"/>,
     <DiMongodb size={200} color="#3FA037"/>,
     <SiMysql size={200} color="#F29111"/>,
+    <DiBootstrap size={200} color="#7952b3 "/>,
     <FaGitAlt size={200} color="#F1502F "/>
 ]
 export const SkillsPage = () => {

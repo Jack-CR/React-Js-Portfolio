@@ -62,6 +62,7 @@ export const NavBar = () => {
 
     return (
         <Router>
+            <div class={theme}>
             <Nav variant="tabs" className="justify-content-center" activeKey="/home">
                 <Nav.Item>
                     <Form.Select aria-label="Default select example" onChange={handleLanguage}>
@@ -103,7 +104,7 @@ export const NavBar = () => {
                     <Nav.Link eventKey="link-2"><FaFilePdf size={30} color="red" /><Link to="/Resume">{language[lang].navMenu_3}</Link></Nav.Link>
                 </Nav.Item>
             </Nav>
-
+                
             <Switch>
                 <Route path="/Resume">
                     <ResumePage/>
@@ -115,6 +116,7 @@ export const NavBar = () => {
                     <SkillsPage/>
                 </Route>
             </Switch>
+            </div>
         </Router>
     )
 }
