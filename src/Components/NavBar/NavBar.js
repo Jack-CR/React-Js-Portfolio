@@ -62,8 +62,6 @@ export const NavBar = () => {
 
     return (
         <Router>
-
-
             <Nav variant="tabs" className="justify-content-center" activeKey="/home">
                 <Nav.Item>
                     <Form.Select aria-label="Default select example" onChange={handleLanguage}>
