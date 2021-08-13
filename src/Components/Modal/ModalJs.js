@@ -37,7 +37,7 @@ export const ModalJs = ({ lang, language }) => {
               <Col>
                 { <h3>{language[lang].modalTecIwhant}</h3>}
                 <SiDotNet size={75} color="purple"/>
-                <SiTypescript size={70} color="#007acc" style={{marginLeft:"30px"}}/>
+                <SiTypescript size={50} color="#007acc" style={{marginLeft:"30px"}}/>
               </Col>
             </Row>
           </Container>
