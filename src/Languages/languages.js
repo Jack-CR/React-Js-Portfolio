@@ -8,7 +8,8 @@ const language = {
         modalHeader: "¡Hi I'm Yacdany and I'm a web Developer!",
         modalAboutMe:"About Me",
         modalmeDescription:"I am a person who is passionate about technology, who likes challenges and does not give up easily. Very self-taught, I never stop learning.",
-        modalTecIwhant:"Technologies that I would like to learn"
+        modalTecIwhant:"Technologies that I would like to learn",
+        modalBtnClose:"Close"
     },
     es: {
         navMenu_1: "Habilidades",
@@ -18,7 +19,8 @@ const language = {
         modalHeader: "¡Hola Soy Yacdany y soy Desarrollador Web!",
         modalAboutMe:"Sobre mi",
         modalmeDescription:"Soy una persona que le apasiona la tecnologia, que le gusta los retos y no se rinde fácilmente. Muy autodidacta , nunca dejo de aprender.",
-        modalTecIwhant:"Tecnologías que me gustaría aprender"
+        modalTecIwhant:"Tecnologías que me gustaría aprender",
+        modalBtnClose:"Cerrar"
     }
 }
 

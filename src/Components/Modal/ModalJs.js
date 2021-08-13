@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { MdLaptopChromebook } from 'react-icons/all'
 import { Modal, Button, Container, Row, Col } from 'react-bootstrap'
-import {SiDotNet,DiDjango} from 'react-icons/all'
+import {SiDotNet,SiTypescript} from 'react-icons/all'
 
 export const ModalJs = ({ lang, language }) => {
 
@@ -26,9 +26,9 @@ export const ModalJs = ({ lang, language }) => {
               <Col>
                 <img src="profile_photo.jpg" alt="prophile_photo" style={{ width: "200px" }}></img>
               </Col>
-              <Col>
+              <Col className="mt-2">
                 <h2>{language[lang].modalAboutMe}</h2>
-                <p className="mt-5">
+                <p>
                   {language[lang].modalmeDescription}
                 </p>
               </Col>
@@ -37,14 +37,14 @@ export const ModalJs = ({ lang, language }) => {
               <Col>
                 { <h3>{language[lang].modalTecIwhant}</h3>}
                 <SiDotNet size={75} color="purple"/>
-                <DiDjango size={75} color="#092E20 " style={{marginLeft:"30px"}}/>
+                <SiTypescript size={70} color="#007acc" style={{marginLeft:"30px"}}/>
               </Col>
             </Row>
           </Container>
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
-            Close
+            {language[lang].modalBtnClose}
           </Button>
         </Modal.Footer>
       </Modal>
