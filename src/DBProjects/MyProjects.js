@@ -8,7 +8,8 @@ import
     IoLogoJavascript,
     DiMongodb,
     SiMysql,
-    FaPhp
+    FaPhp,
+    VscJson
 } from 'react-icons/all'
 
 const MyProjects = [
@@ -100,8 +101,36 @@ const MyProjects = [
         [
             "img/project_3/1.png",
             "img/project_3/2.png",
-            "img/project_3/3.png",
-            "img/project_3/4.png"
+            "img/project_3/3.png"
+        ]
+    },
+    /* PROJECT 4 */
+    {
+        en: {
+            projectTitle: "CRUD FAKE REST API",
+            projectInfo: "Be able to perform the 4 basic Http operations (GET,POST,PUT,DELETE) with Javascript vanilla and JSON server.",
+            projectBtnInfo: "More Information",
+            canvaBuiltwith:"Built with:"
+        },
+        es: {
+            projectTitle: "CRUD MERN",
+            projectInfo: "Poder realizar las 4 operaciones basicas Http (GET,POST,PUT,DELETE) con Javascript vanilla y JSON server.",
+            projectBtnInfo: "Más Información",
+            canvaBuiltwith:"Construido con:"
+        },
+        imgStart: "img/project_4/1.png",
+        tecnologies:
+        [
+            <AiOutlineHtml5 size={60}/>,
+            <DiCss3 size={60}/>,
+            <VscJson size={60}/>,
+            <IoLogoJavascript size={60}/>
+        ],
+        imgProject:
+        [
+            "img/project_4/1.png",
+            "img/project_4/2.png",
+            "img/project_4/3.png"
         ]
     },
 ]

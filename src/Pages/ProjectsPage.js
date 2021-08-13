@@ -8,11 +8,11 @@ import {MyProjects} from '../DBProjects/MyProjects'
 export const ProjectsPage = ({ lang }) => {
 
     return (
-        <Container className="mt-5">
+        <Container>
             <Row>
                 {MyProjects.map((el, key) => {
                     return (
-                        <Col key={key}>
+                        <Col key={key} className="mt-4">
                             <CardsComponent project={el} lang={lang} />
                         </Col>
                     )
