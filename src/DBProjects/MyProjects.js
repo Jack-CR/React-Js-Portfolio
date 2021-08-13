@@ -113,7 +113,7 @@ const MyProjects = [
             canvaBuiltwith:"Built with:"
         },
         es: {
-            projectTitle: "CRUD MERN",
+            projectTitle: "CRUD API REST FALSA",
             projectInfo: "Poder realizar las 4 operaciones basicas Http (GET,POST,PUT,DELETE) con Javascript vanilla y JSON server.",
             projectBtnInfo: "Más Información",
             canvaBuiltwith:"Construido con:"
