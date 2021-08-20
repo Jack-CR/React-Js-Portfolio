@@ -9,8 +9,11 @@ import
     DiMongodb,
     SiMysql,
     FaPhp,
-    VscJson
+    VscJson,
+    DiBootstrap
 } from 'react-icons/all'
+
+const reactJs="#61DBFB",html="#f06529",css="#264de4",js="#f0db4f",mongo="#3FA037",mysql="#F29111",node="#68a063",laravel="#fb503b",botstrao="#7952b3";
 
 const MyProjects = [
     {/* PROJECT 1 */
@@ -29,11 +32,11 @@ const MyProjects = [
         imgStart: "img/project_1/1.png",
         tecnologies:
         [
-            <AiOutlineHtml5 size={60}/>,
-            <DiCss3 size={60}/>,
-            <SiMysql size={60}/>,
-            <IoLogoJavascript size={60}/>,
-            <FaPhp size={60}/>
+            <AiOutlineHtml5 size={60} color={html}/>,
+            <DiCss3 size={60} color={css}/>,
+            <SiMysql size={60} color={mysql}/>,
+            <IoLogoJavascript size={60} color={js}/>,
+            <FaPhp size={60} />
         ],
         imgProject:
             [
@@ -60,11 +63,11 @@ const MyProjects = [
         imgStart: "img/project_2/1.png",
         tecnologies:
         [
-            <AiOutlineHtml5 size={60}/>,
-            <DiCss3 size={60}/>,
-            <SiMysql size={60}/>,
-            <IoLogoJavascript size={60}/>,
-            <FaLaravel size={60}/>
+            <AiOutlineHtml5 size={60} color={html}/>,
+            <DiCss3 size={60} color={css}/>,
+            <SiMysql size={60} color={mysql}/>,
+            <IoLogoJavascript size={60} color={js}/>,
+            <FaLaravel size={60} color={laravel}/>
         ],
         imgProject:
         [
@@ -91,11 +94,11 @@ const MyProjects = [
         imgStart: "img/project_3/1.png",
         tecnologies:
         [
-            <AiOutlineHtml5 size={60}/>,
-            <DiCss3 size={60}/>,
-            <FaReact size={60}/>,
-            <GrNode size={60}/>,
-            <DiMongodb size={60}/>
+            <AiOutlineHtml5 size={60} color={laravel} />,
+            <DiCss3 size={60} color={css}/>,
+            <FaReact size={60} color={reactJs}/>,
+            <GrNode size={60} color={node}/>,
+            <DiMongodb size={60} color={mongo}/>
         ],
         imgProject:
         [
@@ -121,16 +124,74 @@ const MyProjects = [
         imgStart: "img/project_4/1.png",
         tecnologies:
         [
-            <AiOutlineHtml5 size={60}/>,
-            <DiCss3 size={60}/>,
-            <VscJson size={60}/>,
-            <IoLogoJavascript size={60}/>
+            <AiOutlineHtml5 size={60} color={html}/>,
+            <DiCss3 size={60} color={css}/>,
+            <VscJson size={60} color="#2e2e2e"/>,
+            <IoLogoJavascript size={60} color={js}/>
         ],
         imgProject:
         [
             "img/project_4/1.png",
             "img/project_4/2.png",
             "img/project_4/3.png"
+        ]
+    },
+    /* Project 5 */
+    {
+        en: {
+            projectTitle: "My Portfolio",
+            projectInfo: "Show my personal information skills,projects and resume.",
+            projectBtnInfo: "More Information",
+            canvaBuiltwith:"Built with:"
+        },
+        es: {
+            projectTitle: "Mi Portafolio",
+            projectInfo: "Mostrar mi información personal habilidades,proyectos y currículum.",
+            projectBtnInfo: "Más Información",
+            canvaBuiltwith:"Construido con:"
+        },
+        imgStart: "img/project_5/1.png",
+        tecnologies:
+        [
+            <FaReact size={60} color={reactJs}/>,
+            <AiOutlineHtml5 size={60} color={html}/>,
+            <DiCss3 size={60} color={css}/>,
+            <DiBootstrap size={60} color={botstrao}/>,
+        ],
+        imgProject:
+        [
+            "img/project_5/1.png",
+            "img/project_5/2.png",
+            "img/project_5/3.png"
+        ]
+    },
+    /* Project 6 */
+    {
+        en: {
+            projectTitle: "Movie Finder",
+            projectInfo: "Show movies as user writes by querying an API.",
+            projectBtnInfo: "More Information",
+            canvaBuiltwith:"Built with:"
+        },
+        es: {
+            projectTitle: "Buscador de peliculas",
+            projectInfo: "Mostrando peliculas conforme el usuario vaya escribiendo realizando consultas a una api.",
+            projectBtnInfo: "Más Información",
+            canvaBuiltwith:"Construido con:"
+        },
+        imgStart: "img/project_6/1.png",
+        tecnologies:
+        [
+            <FaReact size={60} color={reactJs}/>,
+            <AiOutlineHtml5 size={60} color={html}/>,
+            <DiCss3 size={60} color={css}/>,
+            <DiBootstrap size={60} color={botstrao}/>,
+        ],
+        imgProject:
+        [
+            "img/project_6/1.png",
+            "img/project_6/2.png",
+            "img/project_6/3.png"
         ]
     },
 ]
