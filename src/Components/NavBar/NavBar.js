@@ -23,6 +23,7 @@ import ResumePage from '../../Pages/ResumePage';
 import SkillsPage from '../../Pages/SkillsPage';
 import ModalJs from '../Modal/ModalJs'
 import {language} from '../../Languages/languages'
+import './Style.css'
 
 export const NavBar = () => {
     const [theme, setTheme] = useState("light");
@@ -93,13 +94,13 @@ export const NavBar = () => {
                 </p>
                 <Nav variant="tabs" className="justify-content-start" defaultActiveKey="/">
                     <Nav.Item>
-                        <Nav.Link eventKey="/" ><FiCpu size={30} color="gray" /><Link to="/"> {language[lang].navMenu_1}</Link></Nav.Link>
+                        <Nav.Link eventKey="/" ><FiCpu size={30} color="gray" /><Link to="/" className="nav_links"> {language[lang].navMenu_1}</Link></Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                        <Nav.Link eventKey="link-1"><MdBusinessCenter color="#804000" size={30} /><Link to="/Projects">{language[lang].navMenu_2}</Link></Nav.Link>
+                        <Nav.Link eventKey="link-1"><MdBusinessCenter color="#804000" size={30} /><Link to="/Projects" className="nav_links">{language[lang].navMenu_2}</Link></Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                        <Nav.Link eventKey="link-2"><AiOutlineFilePdf size={30} color="red" /><Link to="/Resume">{language[lang].navMenu_3}</Link></Nav.Link>
+                        <Nav.Link eventKey="link-2"><AiOutlineFilePdf size={30} color="red" /><Link to="/Resume" className="nav_links">{language[lang].navMenu_3}</Link></Nav.Link>
                     </Nav.Item>
                 </Nav>
 
