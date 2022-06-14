@@ -9,7 +9,8 @@ import {
     FiCpu,
     MdBusinessCenter,
     AiOutlineFilePdf,
-    AiOutlineMail
+    AiOutlineMail,
+    SiCodewars
 
 } from 'react-icons/all'
 import {
@@ -22,7 +23,7 @@ import ProjectsPage from '../../Pages/ProjectsPage';
 import ResumePage from '../../Pages/ResumePage';
 import SkillsPage from '../../Pages/SkillsPage';
 import ModalJs from '../Modal/ModalJs'
-import {language} from '../../Languages/languages'
+import { language } from '../../Languages/languages'
 import './Style.css'
 
 export const NavBar = () => {
@@ -48,7 +49,7 @@ export const NavBar = () => {
     return (
         <Router>
             <div className={theme}>
-                <Nav  className="justify-content-center" activeKey="/home">
+                <Nav className="justify-content-center" activeKey="/home">
                     <Nav.Item>
                         <Form.Select aria-label="Default select example" onChange={handleLanguage}>
                             <option value="en">EN</option>
@@ -69,10 +70,19 @@ export const NavBar = () => {
                         <Nav.Link href="https://api.whatsapp.com/send?phone=50689498924" target="_blank"><ImWhatsapp size={30} color="#25D366" /></Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                        <Nav.Link eventKey="link-1" href="https://github.com/Jack-CR?tab=repositories" target="_blank">
+                        <Nav.Link eventKey="link-1" href="https://github.com/yacdanyCR" target="_blank">
                             {theme === "light"
                                 ? <AiFillGithub size={30} color="black" />
                                 : <AiFillGithub size={30} color="white" />
+                            }
+
+                        </Nav.Link>
+                    </Nav.Item>
+                    <Nav.Item>
+                        <Nav.Link href="https://www.codewars.com/users/Yacdany-CR" target="_blank">
+                            {theme === "light"
+                                ? <SiCodewars size={30} color="black" />
+                                : <SiCodewars size={30} color="white" />
                             }
 
                         </Nav.Link>
@@ -82,9 +92,9 @@ export const NavBar = () => {
                     </Nav.Item>
                     <Nav.Item>
                         <Nav.Link href="mailto:jack20-21@hotmail.com">
-                            {theme==="light"
-                                ?<AiOutlineMail size={30} color="black"/>
-                                :<AiOutlineMail size={30} color="white"/>
+                            {theme === "light"
+                                ? <AiOutlineMail size={30} color="black" />
+                                : <AiOutlineMail size={30} color="white" />
                             }
                         </Nav.Link>
                     </Nav.Item>
@@ -109,7 +119,7 @@ export const NavBar = () => {
                         <ResumePage />
                     </Route>
                     <Route path="/Projects">
-                        <ProjectsPage lang={lang}/>
+                        <ProjectsPage lang={lang} />
                     </Route>
                     <Route path="/">
                         <SkillsPage />
