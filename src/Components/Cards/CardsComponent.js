@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card } from 'react-bootstrap'
+import { Card,Button } from 'react-bootstrap'
 import OffCanvaComponent from '../OffCanva/OffCanvaComponent'
 
 export const CardsComponent = ({ project, lang }) => {
@@ -14,6 +14,7 @@ export const CardsComponent = ({ project, lang }) => {
             </Card.Body>
             <Card.Body>
                 <OffCanvaComponent project={project} lang={lang}/>
+                <Button style={{margin:"2rem"}} variant="outline-secondary light" href={project.src} target='_blank' >Demo</Button>
             </Card.Body>
         </Card>
     )

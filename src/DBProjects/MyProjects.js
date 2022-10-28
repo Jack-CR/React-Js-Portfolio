@@ -30,6 +30,7 @@ const MyProjects = [
             canvaBuiltwith:"Construido con:"
         },
         imgStart: "img/project_1/1.png",
+        src:"google",
         tecnologies:
         [
             <AiOutlineHtml5 size={60} color={html}/>,
@@ -61,6 +62,7 @@ const MyProjects = [
             canvaBuiltwith:"Construido con:"
         },
         imgStart: "img/project_2/1.png",
+        src:"https://github.com/yacdanyCR/Laravel-Proyecto",
         tecnologies:
         [
             <AiOutlineHtml5 size={60} color={html}/>,
@@ -80,25 +82,24 @@ const MyProjects = [
     /* PROJECT 3 */
     {
         en: {
-            projectTitle: "CRUD MERN",
-            projectInfo: "Be able to perform the 4 basic Http operations (GET,POST,PUT,DELETE).",
+            projectTitle: "POKÉAPI",
+            projectInfo: "Be able to perform the  basic Http operations (GET) and show pokemons information.",
             projectBtnInfo: "More Information",
             canvaBuiltwith:"Built with:"
         },
         es: {
             projectTitle: "CRUD MERN",
-            projectInfo: "Poder realizar las 4 operaciones basicas Http (GET,POST,PUT,DELETE).",
+            projectInfo: "Poder realizar la  operaciones basicas Http (GET) y mostrar la información de los pokemones.",
             projectBtnInfo: "Más Información",
             canvaBuiltwith:"Construido con:"
         },
         imgStart: "img/project_3/1.png",
+        src:"https://yacdany-poke-api.netlify.app/",
         tecnologies:
         [
             <AiOutlineHtml5 size={60} color={laravel} />,
             <DiCss3 size={60} color={css}/>,
             <FaReact size={60} color={reactJs}/>,
-            <GrNode size={60} color={node}/>,
-            <DiMongodb size={60} color={mongo}/>
         ],
         imgProject:
         [
@@ -122,6 +123,7 @@ const MyProjects = [
             canvaBuiltwith:"Construido con:"
         },
         imgStart: "img/project_4/1.png",
+        src:"https://github.com/yacdanyCR/CRUD-API-Fetch-JavaScript",
         tecnologies:
         [
             <AiOutlineHtml5 size={60} color={html}/>,
@@ -151,6 +153,7 @@ const MyProjects = [
             canvaBuiltwith:"Construido con:"
         },
         imgStart: "img/project_5/1.png",
+        src:"/",
         tecnologies:
         [
             <FaReact size={60} color={reactJs}/>,
@@ -168,7 +171,7 @@ const MyProjects = [
     /* Project 6 */
     {
         en: {
-            projectTitle: "Movie Finder",
+            projectTitle: "Movie Search",
             projectInfo: "Show movies as user writes by querying an API.",
             projectBtnInfo: "More Information",
             canvaBuiltwith:"Built with:"
@@ -180,12 +183,12 @@ const MyProjects = [
             canvaBuiltwith:"Construido con:"
         },
         imgStart: "img/project_6/1.png",
+        src:"https://yacdanycr.github.io/get-movies-from-api/",
         tecnologies:
         [
-            <FaReact size={60} color={reactJs}/>,
+            <IoLogoJavascript size={60} color={js}/>,
             <AiOutlineHtml5 size={60} color={html}/>,
-            <DiCss3 size={60} color={css}/>,
-            <DiBootstrap size={60} color={botstrao}/>,
+            <DiCss3 size={60} color={css}/>
         ],
         imgProject:
         [
