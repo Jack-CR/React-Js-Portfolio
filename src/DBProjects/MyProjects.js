@@ -3,17 +3,15 @@ import
     AiOutlineHtml5,
     DiCss3,
     FaReact,
-    GrNode,
     FaLaravel,
     IoLogoJavascript,
-    DiMongodb,
     SiMysql,
     FaPhp,
     VscJson,
     DiBootstrap
 } from 'react-icons/all'
 
-const reactJs="#61DBFB",html="#f06529",css="#264de4",js="#f0db4f",mongo="#3FA037",mysql="#F29111",node="#68a063",laravel="#fb503b",botstrao="#7952b3";
+const reactJs="#61DBFB",html="#f06529",css="#264de4",js="#f0db4f",mysql="#F29111",laravel="#fb503b",botstrao="#7952b3";
 
 const MyProjects = [
     {/* PROJECT 1 */
