@@ -197,6 +197,63 @@ const MyProjects = [
             "img/project_6/3.png"
         ]
     },
+       /* Project 7 */
+       {
+        en: {
+            projectTitle:"Portfolio landing Page",
+            projectInfo: "Landing Page design from figma.",
+            projectBtnInfo: "More Information",
+            canvaBuiltwith:"Built with:"
+        },
+        es: {
+            projectTitle: "Landing Page",
+            projectInfo: "Diseño copiado de figma.",
+            projectBtnInfo: "Más Información",
+            canvaBuiltwith:"Construido con:"
+        },
+        imgStart: "img/project_7/1.png",
+        src:"https://yacdanycr.github.io/Portfolio-Front-End-2/",
+        tecnologies:
+        [
+            <AiOutlineHtml5 size={60} color={html}/>,
+            <DiCss3 size={60} color={css}/>
+        ],
+        imgProject:
+        [
+            "img/project_7/1.png",
+            "img/project_7/2.png",
+            "img/project_7/3.png"
+        ]
+    },
+      /* Project 8 */
+      {
+        en: {
+            projectTitle:"Ecommerce",
+            projectInfo: "Ecommerce design from figa and some functions with JavaScript vainilla like login validation,log in,add products and see products.",
+            projectBtnInfo: "More Information",
+            canvaBuiltwith:"Built with:"
+        },
+        es: {
+            projectTitle: "Tienda",
+            projectInfo: "Diseño de tienda de figma con algunas funciones con JavaScript vainilla como poner iniciar sesion, validación de login , agregar productos y ver productos.",
+            projectBtnInfo: "Más Información",
+            canvaBuiltwith:"Construido con:"
+        },
+        imgStart: "img/project_8/1.png",
+        src:"https://yacdanycr.github.io/e-comerce/index.html",
+        tecnologies:
+        [
+            <AiOutlineHtml5 size={60} color={html}/>,
+            <DiCss3 size={60} color={css}/>,
+            <IoLogoJavascript size={60} color={js}/>
+        ],
+        imgProject:
+        [
+            "img/project_8/1.png",
+            "img/project_8/2.png",
+            "img/project_8/3.png"
+        ]
+    },
 ]
 
 export {MyProjects}
