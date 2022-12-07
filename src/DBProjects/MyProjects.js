@@ -301,7 +301,7 @@ const MyProjects = [
             canvaBuiltwith: "Construido con:"
         },
         imgStart: "img/project_9/1.png",
-        src: "https://magnificent-entremet-5bd169.netlify.app/",
+        src: "https://dynamic-stroopwafel-062f6f.netlify.app/",
         tecnologies:
             [
                 <FaReact size={60} color={reactJs} />,
@@ -329,7 +329,7 @@ const MyProjects = [
             canvaBuiltwith: "Construido con:"
         },
         imgStart: "img/project_11/1.png",
-        src: "https://dynamic-stroopwafel-062f6f.netlify.app/",
+        src: "https://magnificent-entremet-5bd169.netlify.app/",
         tecnologies:
             [
                 <FaReact size={60} color={reactJs} />,
