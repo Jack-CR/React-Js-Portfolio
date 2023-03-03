@@ -12,6 +12,8 @@ import { project_11 } from "./projects/Project_11/project_11"
 import { project_12 } from "./projects/Project_12/project_12"
 import { project_13 } from "./projects/Project_13/project_13"
 import { project_14 } from "./projects/project_14/project_14"
+import { project_15 } from "./projects/Project_15/project_15"
+
 
 const MyProjects = []
 
@@ -29,6 +31,7 @@ MyProjects.push(project_11);
 MyProjects.push(project_12);
 MyProjects.push(project_13);
 MyProjects.push(project_14);
+MyProjects.push(project_15);
 
 
 export { MyProjects }
