@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Nav, Form } from 'react-bootstrap'
 import {
     ImWhatsapp,
@@ -36,6 +36,7 @@ export const NavBar = () => {
         } else {
             setTheme("light");
         }
+        localStorage.setItem("theme", JSON.stringify(theme))
     }
 
     const handleLanguage = (e) => {
@@ -44,7 +45,21 @@ export const NavBar = () => {
         } else {
             setLang("en");
         }
+        localStorage.setItem("lang", JSON.stringify(lang))
     }
+
+    useEffect(() => {
+        if (localStorage.getItem("theme")) {
+            const theme = JSON.parse(localStorage.getItem("theme"))
+            theme === "light" ? setTheme("dark") : setTheme("light")
+        }
+
+        if (localStorage.getItem("lang")) {
+            const languageData = JSON.parse(localStorage.getItem("lang"))
+            languageData === "en" ? setLang("es") : setLang("en")
+        }
+    }, [])
+
 
     return (
         <Router>
@@ -99,10 +114,12 @@ export const NavBar = () => {
                         </Nav.Link>
                     </Nav.Item>
                 </Nav>
-                <p className="text-center mt-4 mb-4">
+                {/*   <p className="text-center mt-4 mb-4">
                     <ModalJs lang={lang} language={language} />
-                </p>
-                <Nav variant="tabs" className="justify-content-start" defaultActiveKey="/">
+                </p> */}
+                <br></br>
+                <br></br>
+                <Nav variant="tabs" className="justify-content-center" defaultActiveKey="/">
                     <Nav.Item>
                         <Nav.Link eventKey="/" ><FiCpu size={30} color="gray" /><Link to="/" className="nav_links"> {language[lang].navMenu_1}</Link></Nav.Link>
                     </Nav.Item>
